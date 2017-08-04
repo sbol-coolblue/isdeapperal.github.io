@@ -2,12 +2,15 @@
 <head>
 <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 </head>
-<body>
-<p id="update" style="font-size: 30px; text-align: center">Hij staat in de app-store, maar is nog niet vindbaar<br />
-<p style="text-align: center"><a href="itms-apps://itunes.apple.com/app/id1174047097">Installeer direct in iTunes</p>
+<body align="center">
+<p id="update" style="font-size: 30px;">Hij staat in de app-store, maar is nog niet vindbaar<br />
+
+<p style="text-align: center">
+  <a href="itms-apps://itunes.apple.com/app/id1174047097"><img src="https://cdn.shopify.com/s/files/1/1281/1413/files/available-on-app-store-apple_large.png?12294398736099541218"><br />Installeer direct in iTunes</a>
+</p>
+
 <a href="https://coolblue.nl/app">Bekijk de App pagina op coolblue.nl</a></p>
 <script>
-
 fetch("https://itunes.apple.com/nl/genre/ios-winkelen/id6024?mt=8&letter=C&page=9")
     .then(function (response) {
         response.text().then(function (responseText) {
@@ -19,5 +22,4 @@ fetch("https://itunes.apple.com/nl/genre/ios-winkelen/id6024?mt=8&letter=C&page=
         });
     });
 </script>
-
 </body>
